@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    animation: background-change 30s ease-in-out infinite;
+  }
+
+  @keyframes background-change {
+    0% {
+      background-color: #f0f0f0;
+    }
+    10% {
+      background-color: #52bcedf9;
+    }
+    20% {
+      background-color: #66d2f9;
+    }
+    30% {
+      background-color: #62fac7;
+    }
+    40% {
+      background-color: #3af986;
+    }
+    50% {
+      background-color: #0de4e4;
+    }
+    60%{
+      background-color: #12ade5;
+    }
+    70%{
+      background-color: #18b1ed;
+    }
+    80%{
+      background-color: #4b9ef7;
+    }
+    90%{
+      background-color: #7692e0;
+    }
+    95%{
+      background-color: #97def4;
+    }
+    100%{
+      background-color: #f0f0f0;
+    }
+  }
+
+nav{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+nav a {
+    position:sticky;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    margin:  10px;
+    animation: color-change 30s ease-in-out infinite;
+}
+@keyframes color-change{
+  0%{
+    color: #0de4e4;
+  }
+  10%{
+    color: #1e2326;
+  }
+  20%{
+    color: burlywood;
+  }
+  30%{
+    color: coral;
+  }
+  40%{
+    color: darkred;
+  }
+  50%{
+    color: yellowgreen;
+  }
+  60%,70%,80%,90%{
+    color: rgba(0, 0, 0, 0.674);
+  }
+  95%{
+    color: rgb(230, 230, 83);
+  }
+  100%{
+    color: turquoise;
+  }
+}
+
+nav a:hover{
+  box-shadow: 2px 2px 2px 2px;
+  transform:translateY(-3px);
+  border-radius: 10px;
+  transition: .2s ease-in-out;
+}
+
+
+  .calculator {
+  border: 1px solid #1e2326;
+  border-radius: 10px;
+  box-shadow: 6px 8px 15px 0px rgba(0, 0, 0, 0.674);
+  width: 550px;
+  height: auto;
+  padding: 16px;
+  animation: slide-in 0.5s ease-out;
+  animation-delay: 0.2s;
+  transition: transform 0.2s; 
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/542/50/545/simple-background-blue-simple-minimalism-wallpaper-preview.jpg");
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+#display {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 24px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #1e2326;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/22/240/855/texture-gradient-simple-background-blue-wallpaper-preview.jpg");
+  color: #ffffff;
+}
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+button {
+  cursor: pointer;
+  color: #d1d1d1;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/22/240/855/texture-gradient-simple-background-blue-wallpaper-preview.jpg");
+  border: none;
+  padding: 15px;
+  font-size: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 4px rgba(74, 167, 198, 0.66);
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/542/50/545/simple-background-blue-simple-minimalism-wallpaper-preview.jpg");
+  color:#1e2326;
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.operator {
+  background-color: #ececec;
+}
+
+.operator:hover {
+  background-color: #d1d1d1;
+}
+
+.operator:active {
+  background-color: #c1c1c1;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+    animation: fade-in 1s ease-in-out;
+    animation-delay: 0.5s;  
+  }
+  
+  .footer p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .animated-line {
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: currentColor;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    animation: slide-in-out 2s ease-in-out infinite;
+  }
+  
+  
