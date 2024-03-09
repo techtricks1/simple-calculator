@@ -6,7 +6,6 @@ A basic web-based calculator application built with HTML, CSS, and JavaScript.
 
 - [Description](#description)
 - [Preview](#preview)
-- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Keyboard Support](#keyboard-support)
@@ -20,16 +19,7 @@ Simple Calculator is a straightforward calculator application that allows users 
 ## Preview
 
 Insert image or GIF preview of your project here.
-
-## Features
-
-- Addition (+)
-- Subtraction (-)
-- Multiplication (*)
-- Division (/)
-- Clear display (C)
-- Memory functionality (M+, MR)
-
+[!video preview](https://github.com/techtricks1/simple-calculator/blob/main/calculator/Untitled%20video%20-%20Made%20with%20Clipchamp.mp4)
 ## Installation
 
 To install the Simple Calculator application, follow these steps:
@@ -51,9 +41,7 @@ The Simple Calculator application supports the following keyboard shortcuts:
 - Input operators: +, -, *, /
 - Perform calculation: Enter (=)
 - Clear display: Escape (Esc) or Delete (Del)
-- Memory functions:
-  - Add to memory: M+
-  - Recall from memory: MR
+
 
 ## Contributing
 
